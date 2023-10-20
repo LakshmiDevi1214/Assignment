@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+<style>
+    body{
+        background-color: rgb(34, 167, 219);
+        font-family: verdana;
+    }
+    h2{
+        font-family:serif;
+        color:white;
+    }
+    label{
+        display: block;
+        margin-bottom: 10px;
+    }
+    .form-control{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    form{
+        margin: 30px auto;
+        padding: 30px 30px;
+        max-width: 450px;
+        background-color: white;
+    }
+    .form-control input,
+    .form-control textarea{
+        display: block;
+        padding: 5px;
+    }
+    .form-control input[type="radio"]{
+        display: inline-block;
+        width: auto;
+    }
+    button{
+        display: block;
+        padding: 10px 12px;
+        background-color: rgb(33, 170, 224);
+    }
+</style>
+</head>
+<body>
+    <h2 style="text-align: center;">Customer Survey Form</h2>
+<form style="text-align: center;">
+    <div class="form-control">
+    <label for="name" id="name">Name</label>
+    <input type="name" name="Name">
+    </div>
+    <div class="form-control">
+        <label for="email" id="email">Email</label>
+        <input type="email" name="email">
+        </div>
+        <div class="form-control">
+            <label style="font-size: 90%;">Is this first time you are using our product & service?</label>
+            <input type="radio" name="Choice">Yes
+            <input type="radio" name="Choice">No
+        </div>
+        <div class="form-control">
+            <label style="font-size: 90%;">Would you suggestion to your friends & collegues?</label>
+            <input type="radio" name="Choice">Yes
+            <input type="radio" name="Choice">No
+        </div>
+        <div class="form-control">
+            <label style="font-size: 90%;">How satisfied are you with our company overall?</label>
+            <input type="radio" name="Choice">Satisfied
+            <input type="radio" name="Choice">Undecided
+            <input type="radio" name="Choice">Unsatisfied
+        </div>
+        <div class="form-control">
+            <label style="font-size: 90%;">Do you have suggestion to imporve our service?</label>
+            <textarea rows="5" cols="50"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+</form>
+</body>
+</html>
